@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.android.companypageproject.MainActivity">
+
+    <ImageView
+        android:src="@drawable/ski"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cover"
+        android:scaleType="centerCrop"
+        android:layout_weight="2"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/resortlogo_jaypeak"
+        android:layout_weight="0"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="0">
+
+
+
+        <TextView
+            android:text="830 Jay Peak Rd, Jay, VT 05859"
+            android:drawableLeft="@drawable/map"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"/>
+        <TextView
+            android:text="Monday-Friday: 9 AM – 4 PM \nWeekends: 8:30 AM - 4PM"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"/>
+        <TextView
+            android:text="(802) 988-2611"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"/>
+    </LinearLayout>
+</LinearLayout>
